@@ -6,7 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  text = 'World';
 
-  constructor() {}
+  constructor() {
+  }
+
+  onChangeText() {
+    if (this.text == 'World') {
+      this.text = 'Yash';
+    } else {
+      this.text = 'World';
+    }
+  }
 
 }
+
+
